@@ -1,0 +1,8 @@
+1\ Install Package [rbx1] 
+	$ cd ~/catkin_ws/src
+	$ git clone https://github.com/pirobot/rbx1
+	$ cd ~/catkin_ws
+	$ catkin_make
+
+2\ Install Dependencies
+	$ sh ~/catkin_ws/src/rbx1/rbx1-prereq.sh
