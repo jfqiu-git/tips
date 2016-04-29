@@ -1,16 +1,16 @@
-1\ 安装 Git
+### 安装 Git
 	sudo apt-get install git
 
-2\ 设置 config
+### 设置 config
 	$ git config --global user.name "jfqiu-git"
 	$ git config --global user.email jfqiu_bit@126.com
 	$ git config --global core.editor vim
 	$ git config --global color.ui true
-3\ 创建 SSH Key
+### 创建 SSH Key
 	$ ssh-keygen -t rsa -C "jfqiu_bit@126.com"
 	"Account settings:, 在Key文本框里粘贴id_rsa.pub文件的内容
 
-4\ 使用git在本地创建一个项目的过程
+### 使用git在本地创建一个项目的过程
 
 	$ mkdir ~/hello-world    //创建一个项目hello-world
 	$ cd ~/hello-world       //打开这个项目
@@ -24,7 +24,7 @@
 
 	$ git pull --rebase origin master
 
-5\ 创建dev分支，然后切换到dev分支
+### 创建dev分支，然后切换到dev分支
 	$ git branch dev
 	$ git checkout dev
 
