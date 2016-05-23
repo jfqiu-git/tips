@@ -14,7 +14,7 @@ http://wiki.ros.org/hokuyo_node/Tutorials
 	>> sudo gedit /etc/udev/rules.d/80-ttyACM.rules
   and add
  	KERNEL=="ttyACM[0-9]*",MODE="0666"
-	KERNEL=="ttyACM[0-9]*", ACTION=="add", ATTRS{idVendor}=="15d1", MODE="0666", GROUP="dialout", PROGRAM="/opt/ros/indigo/env.sh rosrun hokuyo_node getID %N q", SYMLINK+="sensors/hokuyo_%c"
+	SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", ACTION=="add", ATTRS{idVendor}=="15d1", ATTRS{idProduct}=="0000", MODE="666", PROGRAM="/opt/ros/hydro/lib/urg_node/getID /dev/%k q", SYMLINK+="sensors/hokuyo_%c", GROUP="dialout"
 
 - Run the demo
 	>> rosrun hokuyo_node hokuyo_node
