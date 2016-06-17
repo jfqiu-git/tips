@@ -1,6 +1,6 @@
 ROS Package [hokuyo]
 
-http://wiki.ros.org/hokuyo_node/Tutorials
+[http://wiki.ros.org/hokuyo_node/Tutorials]
 
 - Install packege
 	>> sudo apt-get install ros-indigo-hokuyo-node

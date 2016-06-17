@@ -1,7 +1,7 @@
-1\Installation
+###Installation
 	sudo apt-get install terminator
 
-2\Command
+###Command
 	ctrl + shift + o (horizonal)
 	ctrl + shift + e (vertical)
 	ctrl + shift + t (new)

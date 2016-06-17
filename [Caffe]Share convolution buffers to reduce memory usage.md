@@ -1,9 +1,8 @@
-https://github.com/BVLC/caffe/pull/2016/files
+### Extend CNN Memory Usage
+	[https://github.com/BVLC/caffe/pull/2016/files]
 
-
-1. Edit *.cpp
-   
-   [include/caffe/vision_layers.hpp]
+### Edit *.cpp
+   1. [include/caffe/vision_layers.hpp]
 
        int col_offset_;
        int output_offset_;
@@ -12,12 +11,8 @@ https://github.com/BVLC/caffe/pull/2016/files
        Blob<Dtype> bias_multiplier_;
  
 
-
-
-
-2. Edit *.cpp
- 
-   [src/caffe/layers/base_conv_layer.cpp]
+### Edit *.cpp
+   2. [src/caffe/layers/base_conv_layer.cpp]
 
        namespace caffe 
        {

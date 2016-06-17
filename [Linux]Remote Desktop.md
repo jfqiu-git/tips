@@ -1,7 +1,7 @@
-1\ IP
+### IP
 	hostname -I
-2\ openen
+### openen
 	vino-preferences
 	gsettings set org.gnome.Vino require-encryption false
-3\ access
+### access
 	remmina

@@ -1,10 +1,10 @@
-1\ Install libfreenect2
+## Install libfreenect2
 
-   - https://github.com/OpenKinect/libfreenect2
+   - [https://github.com/OpenKinect/libfreenect2]
    - When "Install OpenGL", do not "sudo apt-get install libgl1-mesa-dri-lts-vivid", which will confict with other packages.
-   - do not install optional packages.
+   - **do not install optional packages.**
 
-2\ Install iai_kinect2
+## Install iai_kinect2
 
 
 
