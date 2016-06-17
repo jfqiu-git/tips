@@ -14,10 +14,11 @@
 	if conflict or break, sudo apt-get remove it
 
 ### Install g2o [https://github.com/RainerKuemmerle/g2o/issues/53]
-	* >> ccmake ..
-	* click "c" to configure
-	* Enable "BUILD_CSPARSE"
-	* 
+	* >> mkdir build
+	* >> cd build
+	* >> cmake ..
+	* >> make
+	* >> sudo make install
 
 
 
