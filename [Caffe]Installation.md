@@ -20,23 +20,25 @@ $ sudo apt-get install freeglut3-dev
 >  Install the **CUDA library** and **latest driver** separately.
 >  **CUDA library** installation referenced to [NVIDIA CUDA Getting Started Guide for Linux](https://developer.nvidia.com/cuda-downloads/).
 
-###1. Disable the Nouveau drivers :
+###1. Disable the Nouveau Drivers:
 * Create a file at **/etc/modprobe.d/blacklist-nouveau.conf** with the following contents : 
 ```
 blacklist nouveau
 options nouveau modeset=0
 ```
-* Regenerate the kernel initramfs : 
+* Regenerate the kernel initramfs: 
 ```
 $ sudo update-initramfs –u
 ```
 *  Reboot computer 
-*  Confirm this works if the following command prints nothing :
+*  Confirm this works if the following command prints nothing:
 ```
 $ lsmod | grep nouveau
 ```
-###2. Download runfile
+
+###2. Download Runfile for CUDA Library
 Choose the suitable [runfile](https://developer.nvidia.com/cuda-downloads/)  for your installation. (I got **cuda_7.0.28_linux.run** for myself).
+
 ###3. Install CUDA library
 * Press *Ctrl + alt + F3* to enter the text mode, and type these command: 
 ``` 
@@ -47,11 +49,11 @@ $ sudo sh cuda_7.0.28_linux.run
 * Press *Enter* until 100%, and Choose **“yes”** all the way except : 
 > **Notice: Install NVIDIA Accelerate Graphic driver ? Choose "NO" !**
 
-###4. Restart the desktop :
+###4. Restart Your Computer:
 ```
 $ sudo start lightdm
 ```
-###5. Configure environment :
+###5. Environment Configuration:
 ```
 $ export PATH=/usr/local/cuda-7.0/bin:$PATH
 $ export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
