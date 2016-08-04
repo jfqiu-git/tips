@@ -33,7 +33,7 @@ $ sudo update-initramfs –u
 *  Reboot computer 
 *  Confirm this works if the following command prints nothing :
 ```
-lsmod | grep nouveau
+$ lsmod | grep nouveau
 ```
 ###2. Download runfile
 Choose the suitable [runfile](https://developer.nvidia.com/cuda-downloads/)  for your installation. (I got **cuda_7.0.28_linux.run** for myself).
