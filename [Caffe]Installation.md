@@ -49,7 +49,7 @@ $ sudo sh cuda_7.0.28_linux.run
 * Press *Enter* until 100%, and Choose **“yes”** all the way except : 
 > **Notice: Install NVIDIA Accelerate Graphic driver ? Choose "NO" !**
 
-###4. Restart Your Computer:
+###4. Restart Your Desktop:
 ```
 $ sudo start lightdm
 ```
