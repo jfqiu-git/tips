@@ -21,7 +21,7 @@ $ sudo apt-get install freeglut3-dev
 > * **CUDA library** installation referenced to [NVIDIA CUDA Getting Started Guide for Linux](https://developer.nvidia.com/cuda-downloads/).
 
 ###1. Disable the Nouveau drivers :
-* Create a file at */etc/modprobe.d/blacklist-nouveau.conf* with the following contents : 
+* Create a file at **/etc/modprobe.d/blacklist-nouveau.conf** with the following contents : 
 ```
 blacklist nouveau
 options nouveau modeset=0
