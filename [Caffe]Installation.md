@@ -83,9 +83,7 @@ $ cd 2.4
 $ ./opencv2_4_10.sh
 ```
 ## Step 5. Caffe Compilation
-```
-    I have a CPU I7-5930K, 6 cores 12 threads.
-```
+I have a CPU I7-5930K, 6 cores 12 threads.
 ```
 $ cd $CAFFE_ROOT$
 $ cp Makefile.config.example Makefile.config
