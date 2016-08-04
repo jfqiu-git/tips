@@ -84,11 +84,11 @@ $ ./opencv2_4_10.sh
 ```
 ## Step 5. Caffe Compilation
 ```
-$ cp Makefile.config.example Makefile.config
-```
     I have a CPU I7-5930K, 6 cores 12 threads.
 ```
+```
 $ cd $CAFFE_ROOT$
+$ cp Makefile.config.example Makefile.config
 $ mkdir build
 $ cd build
 $ cmake .. -DCMAKE_BUILD_TYPE=Release
