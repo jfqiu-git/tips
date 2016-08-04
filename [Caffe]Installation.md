@@ -16,7 +16,7 @@ $ sudo apt-get install git
 $ sudo apt-get install freeglut3-dev
 ```
 ## Step 2. Install CUDA library
-    CUDA is only required to GPU-mode, this step can be skipped for CPU-only installation. CUDA library version 7.0 and the latest driver version are recommended. Because the driver bundled with the library is usually out-of-date, so we need to 
+> * CUDA is only required to GPU-mode, this step can be skipped for CPU-only installation. CUDA library version 7.0 and the latest driver version are recommended. Because the driver bundled with the library is usually out-of-date, so we need to 
 > * Install the **CUDA library** and **latest driver** separately.
 > * **CUDA library** installation referenced to [NVIDIA CUDA Getting Started Guide for Linux](https://developer.nvidia.com/cuda-downloads/).
 
