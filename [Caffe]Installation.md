@@ -1,4 +1,4 @@
-# Instruction on Installing Caffe (Ubuntu 14.04 x64)
+# Instruction on Installing Caffe (Ubuntu 14.04 x64 GTX980Ti)
 
 ----
 
@@ -45,33 +45,34 @@ $ sudo stop lightdm
 $ sudo sh cuda_7.0.28_linux.run
 ```
 * Press *Enter* until 100%, and Choose **“yes”** all the way except : 
-> **Notice: Install driver ? Choose "NO" !**
+> **Notice: Install NVIDIA Accelerate Graphic driver ? Choose "NO" !**
 
 ###4. Restart the desktop :
 ```
 $ sudo start lightdm
 ```
-###5. Make sure CUDA is set corrected :
+###5. Configure environment :
 ```
 $ export PATH=/usr/local/cuda-7.0/bin:$PATH
 $ export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
 $ sudo ldconfig /usr/local/cuda/lib64
 ```
+
+## Step 3. Install NVIDIA latest driver
+    I have a GTX980Ti, but the driver bundled with the CUDA 7.0 is version 346.46, the 346.46 driver probably doesn't recognize GTX980Ti! So we need to install the latest driver now.
+[Choose driver for your graphic card](http://www.geforce.cn/drivers)
+```
+$ sudo sh NVIDIA-Linux-x86_64-352.21.run
+```
+"**Accept**" all the way will be OK.
+
 Verified by :
 ```
 $ cd NVIDIA_CUDA-7.0_Samples
 $ make –j12
 $ ./bin/deviceQuiry
 ```
-If print "**PASS**", you success.
-
-## Step 3. Install NVIDIA latest driver
-    I have a GTX980Ti, but the driver bundled with the CUDA 7.0 is version 346.46, the 346.46 driver probably doesn't recognize GTX980Ti! So we need to install the latest driver firstly.
-[Choose driver for your graphic card](http://www.geforce.cn/drivers)
-```
-$ sudo sh NVIDIA-Linux-x86_64-352.21.run
-```
-"**Accept**" all the way will be OK.
+If print "**PASS**", CUDA library and NVIDIA driver have been installed correctly.
 
 ## Step 4. Install OpenCV
 ```
@@ -81,16 +82,18 @@ $ ./dependencies
 $ cd 2.4
 $ ./opencv2_4_10.sh
 ```
-## Step 5. Compilation
+## Step 5. Caffe Compilation
 ```
 $ cp Makefile.config.example Makefile.config
 ```
     I have a CPU I7-5930K, 6 cores 12 threads.
 ```
+$ cd $CAFFE_ROOT$
 $ mkdir build
 $ cd build
 $ cmake .. -DCMAKE_BUILD_TYPE=Release
 $ make –j12
+$ sudo make install
 ```
 ## Step 6. Interface (pycaffe)
     In order to use pycaffe properly we need to install these libraries :
