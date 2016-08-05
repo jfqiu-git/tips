@@ -40,3 +40,8 @@
 	opencv_ts2411.lib
 	opencv_video2411.lib
 	opencv_videostab2411.lib
+
+###5. 使用
+	
+	#include <opencv2/highgui/highgui.hpp>
+	#include <opencv2/imgproc/imgproc.hpp>
