@@ -6,17 +6,14 @@ website[https://www.freedesktop.org/wiki/Software/Beignet/]
 1. Download beignet 1.1.1 file [https://01.org/sites/default/files/beignet-1.1.1-source.tar.gz]
 
 2. Install dependencies 
-	'
 	$ sudo apt-get install cmake pkg-config python ocl-icd-dev ocl-icd-opencl-dev libdrm-dev libxfixes-dev libxext-dev llvm-3.5-dev clang-3.5 libclang-3.5-dev libtinfo-dev libedit-dev zlib1g-dev
-	'
 3. Build the Beignet
-'
 	$ cd $Beignet_ROOT$
 	$ mkdir build
 	$ cd build
 	$ make -j
 	$ sudo make install
-'
+
 ### Install libfreenect2[https://github.com/OpenKinect/libfreenect2/blob/master/README.md#linux]
 1. Install dependencies
 	$ git clone https://github.com/OpenKinect/libfreenect2.git
