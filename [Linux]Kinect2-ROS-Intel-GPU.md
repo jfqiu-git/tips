@@ -1,4 +1,4 @@
-### 1. Update ubuntu kernel version to 3.16+(4.4 is used now)
+### 1. Update ubuntu kernel version to 3.16+ (4.4.0 rc6 wily is used now)
 	
 	$ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.4-rc6-wily/linux-headers-4.4.0-040400rc6_4.4.0-040400rc6.201512202030_all.deb
 	$ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.4-rc6-wily/linux-headers-4.4.0-040400rc6-generic_4.4.0-040400rc6.201512202030_amd64.deb
