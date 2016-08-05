@@ -1,4 +1,4 @@
-### Configure Environment
+### 环境变量配置
 
 1.添加用户变量
 
@@ -8,7 +8,7 @@
 
 	;%OPENCVROOT%\build\x64\vc12\bin;
 
-3.程序中添加配置文件
+### 程序中添加配置文件
 
 *先转换为Release x64项目，接着在属性管理器中的Release x64中添加配置文件
 
