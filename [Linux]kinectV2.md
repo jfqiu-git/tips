@@ -40,7 +40,7 @@
 
 3.3 *Test*
 
-Replug the Kinect, and:
+Replug the Kinect, then:
 	
 	$ ./bin/Protonect
 	
