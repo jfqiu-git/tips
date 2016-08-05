@@ -28,16 +28,17 @@ website[https://github.com/OpenKinect/libfreenect2/blob/master/README.md#linux]
  
 3.2 Build
 
-	`$ cd $libfreenect2_ROOT$`
-	`$ mkdir build && cd build`
-	`$ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DENABLE_CXX11=ON`
-	`$ make -j`
-	`$ sudo make install`
-	`$ sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/`
+	$ cd $libfreenect2_ROOT$
+	$ mkdir build && cd build
+	$ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DENABLE_CXX11=ON
+	$ make -j
+	$ sudo make install
+	$ sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 
 3.3 Test
 	Replug the Kinect, and:
-	`$ ./bin/Protonect`
+	
+	$ ./bin/Protonect
 	
 ### 4. Install iai_kinect[https://github.com/code-iai/iai_kinect2]
 	$ cd ~/catkin_ws/src
