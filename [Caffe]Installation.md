@@ -3,8 +3,7 @@
 ----
 
     I have successfully compiled and run Caffe on Clean Ubuntu 14.04 LTS (64bit) as following.
-## Step 1. Install dependencies
-[Reference](http://caffe.berkeleyvision.org/install_apt.html).
+## Step 1. [Install dependencies](http://caffe.berkeleyvision.org/install_apt.html)
 ```
 $ sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 $ sudo apt-get install --no-install-recommends libboost-all-dev
