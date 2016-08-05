@@ -10,17 +10,19 @@
 
 ## 程序中添加配置文件
 
-###1. 先转换为Release x64项目，接着在属性管理器中的Release x64中添加配置文件
+先转换为Release x64项目，接着在属性管理器中的Release x64中添加配置文件
 
-###2. C++ - 附加包含目录：
+## 手动添加配置文件
+
+###1. C++ - 附加包含目录：
 
 	$(OPENCVROOT)\build\include\
 
-###3. 链接器 - 常规 - 附加库目录：
+###2. 链接器 - 常规 - 附加库目录：
 
 	$(OPENCVROOT)\build\x64\vc12\lib\
 
-###4. 链接器 - 输入 - 附加依赖项：
+###3. 链接器 - 输入 - 附加依赖项：
 
 	opencv_contrib2411.lib
 	opencv_core2411.lib
