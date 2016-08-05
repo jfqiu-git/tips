@@ -39,7 +39,6 @@
 	$ sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 
 3.3 *Test*
-
 	Replug the Kinect, and:
 	
 	$ ./bin/Protonect
