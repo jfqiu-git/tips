@@ -1,11 +1,9 @@
 ### 环境变量配置
 
 1.添加用户变量
-
 	OPENCVROOT [D:\opencv2411\opencv]
 
 2.添加path变量
-
 	;%OPENCVROOT%\build\x64\vc12\bin;
 
 ### 程序中添加配置文件
@@ -19,7 +17,6 @@
 	$(OPENCVROOT)\build\x64\vc12\lib\
 
 *链接器 - 输入 - 附加依赖项：
-
 	opencv_contrib2411.lib
 	opencv_core2411.lib
 	opencv_features2d2411.lib
