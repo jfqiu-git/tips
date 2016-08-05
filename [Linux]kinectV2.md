@@ -1,12 +1,8 @@
 ### 1. Update ubuntu kernel version to 3.16+(4.4 is used now)
 
-### 2. Install Beignet 
+### 2. [Install Beignet](https://www.freedesktop.org/wiki/Software/Beignet/)
 
-	website[https://www.freedesktop.org/wiki/Software/Beignet/]
-
-2.1 *Download beignet 1.1.1 file*
-
-	website[https://01.org/sites/default/files/beignet-1.1.1-source.tar.gz]
+2.1 *Download [beignet 1.1.1 file](https://01.org/sites/default/files/beignet-1.1.1-source.tar.gz)*
 
 2.2 *Install dependencies*
 
@@ -20,9 +16,7 @@
 	$ make -j
 	$ sudo make install
 
-### 3.Install libfreenect2
-
-	website[https://github.com/OpenKinect/libfreenect2/blob/master/README.md#linux]
+### 3. [Install libfreenect2](https://github.com/OpenKinect/libfreenect2/blob/master/README.md#linux)
 
 3.1 *Install dependencies*
 
@@ -50,7 +44,7 @@
 	
 	$ ./bin/Protonect
 	
-### 4. Install iai_kinect[https://github.com/code-iai/iai_kinect2]
+### 4. Install [iai_kinect](https://github.com/code-iai/iai_kinect2)
 	$ cd ~/catkin_ws/src
 	$ git clone https://github.com/code-iai/iai_kinect2.git
 	$ cd iai_kinect2
