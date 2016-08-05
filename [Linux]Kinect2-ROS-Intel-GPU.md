@@ -41,12 +41,12 @@
 	$ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DENABLE_CXX11=ON
 	$ make -j
 	$ sudo make install
+	
 	$ sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 
 3.3 *Test*
 
 Replug the Kinect, then:
-	
 	$ ./bin/Protonect
 	
 ### 4. Install [iai_kinect](https://github.com/code-iai/iai_kinect2)
