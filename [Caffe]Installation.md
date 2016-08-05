@@ -59,8 +59,7 @@ $ sudo ldconfig /usr/local/cuda/lib64
 ```
 
 ## Step 3. Install NVIDIA latest driver
-    I have a GTX980Ti, but the driver bundled with the CUDA 7.0 is version 346.46, the 346.46 driver probably doesn't recognize GTX980Ti! So we need to install the latest driver now.
-[Choose driver for your graphic card](http://www.geforce.cn/drivers)
+I have a GTX980Ti, but the driver bundled with the CUDA 7.0 is version 346.46, the 346.46 driver probably doesn't recognize GTX980Ti! So we need to install the latest driver now. [Choose driver for your graphic card](http://www.geforce.cn/drivers)
 ```
 $ sudo sh NVIDIA-Linux-x86_64-352.21.run
 ```
