@@ -47,6 +47,7 @@
 3.3 *Test*
 
 Replug the Kinect, then:
+
 	$ ./bin/Protonect
 	
 ### 4. Install [iai_kinect](https://github.com/code-iai/iai_kinect2)
