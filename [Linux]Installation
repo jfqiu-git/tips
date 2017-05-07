@@ -1,0 +1,10 @@
+## (SSD&HDD)--(Ubuntu&Window)
+/boot in SSD
+
+## ctrl+alt+F1 PCI error
+$sudo vi /etc/default/grub
+pcie=noare
+
+## Nvidia driver black
+$sudo vi /etc/default/grub
+nomodeset
