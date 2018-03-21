@@ -10,7 +10,11 @@ You may need to install the following packages for this specific kernel:
 
 ### use perf to analysis
 >> git clone https://github.com/brendangregg/FlameGraph.git
+
 >> cd FlameGraph
+
 >> sudo perf record -F 99 -p $pid -g -- sleep 30
+
 >> sudo perf script | ./stackcollapse-perf.pl > out.perf-folded
+
 >> ./flamegraph.pl out.perf-folded > perf-kernel.svg
