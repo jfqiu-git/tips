@@ -1,0 +1,11 @@
+### Installation
+>> sudo apt-get install clang-format-3.5
+go to visual studio code
+>> ctrl + shift + x
+install clang-format
+
+### Create .clang-format in /home/dji/
+>> vi .clang-format
+BasedOnStyle: google
+
+### reboot visual studio code
